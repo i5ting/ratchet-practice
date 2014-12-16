@@ -14,6 +14,24 @@ goratchet.com
 - 和bootstrap思路相近
 - 便于定制和集成
 
+
+## Run && Test
+
+```
+npm install 
+npm start
+```
+
+this will open `http://0.0.0.0:8881/index.html`
+
+![](doc/1.png)
+
+默认，ratchet是不支持pc浏览器的click事件的，所以我们需要【开启移动测试】
+
+![](doc/2.png)
+
+然后就可以尽情测试了。
+
 ## push
 
 原理：已数据结构【栈】的方式存放nav导航页面。
