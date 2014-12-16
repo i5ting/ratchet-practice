@@ -122,3 +122,6 @@ window.PUSH = PUSH;
 
 上面的2种方式可以任意组合，可以胜任各种场景。
 
+
+- jade学习文档 https://github.com/i5ting/study-jade
+
