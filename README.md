@@ -183,12 +183,12 @@ window.PUSH = PUSH;
 
 ### 推荐js库
 
-- ratchet
-- zepto.js
-- iscroll5.js
-- fastclick.js
-- miniobj.js
-- collection.js
+- ratchet(push,ui,css)
+- zepto.js(类jq的移动端库，支持tap、手势等，兼容jquey大部分api)
+- iscroll5.js（滚动效果最好的库）
+- fastclick.js（增强点击转成touch的库，可定制）
+- miniobj.js（js面向对象库）
+- collection.js（如果移动端浏览器不支持websql，它会自动转成localstorage）
 
 ### 使用gulp task
 
