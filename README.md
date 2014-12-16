@@ -179,3 +179,29 @@ window.PUSH = PUSH;
 
 所有的js代码应该最终都写在一个文件里。
 
+## 推荐方案
+
+### 推荐js库
+
+- ratchet
+- zepto.js
+- iscroll5.js
+- fastclick.js
+- miniobj.js
+- collection.js
+
+### 使用gulp task
+
+- uglify
+- watch
+- livereload
+- test
+- coverage
+
+### 服务器优化
+
+- appcache
+- mime
+- zip
+- 禁用etag
+- ...
