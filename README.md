@@ -7,7 +7,7 @@ goratchet.com
 
 它是twitter出的移动端h5框架。用于原型和快速开发。
 
-优势
+## 优势
 
 - 快速开发
 - 小巧
@@ -51,6 +51,12 @@ data-transition是push的时候的动画
 
 ## push js
 
+默认不写任何js代码就可以完成push的，但是高级定制的是一定要了解每个页面入栈和出栈的生命周期的
+
+这方面ratchet表现的很弱，但可以实现
+
+### 状态切换
+
 ```
 window.addEventListener('push', function(e){
 	$("#t2").show();
@@ -79,11 +85,16 @@ $(".icon-left-nav").on('click',function(e){
 
 更多见源码里的push.js，当它完成push的时候，会发送一个自定义事件push的。
 
+
+### 手动调用
+
 另外可以手动调用的。见源码：
 
 ```
 window.PUSH = PUSH;
 ```
+
+
 
 ## push的弊端
 
