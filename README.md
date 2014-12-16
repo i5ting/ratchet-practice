@@ -179,7 +179,7 @@ window.PUSH = PUSH;
 
 所有的js代码应该最终都写在一个文件里。
 
-## 推荐方案
+## my best practice 
 
 ### 推荐js库
 
