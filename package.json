@@ -4,8 +4,9 @@
   "description": "ratchet-practice ================",
   "main": "index.js",
   "scripts": {
-		"start":"http-server . -p 8881 -o",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server . -p 8881 -o",
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"doc":"gulp"
   },
   "repository": {
     "type": "git",
@@ -17,14 +18,16 @@
     "url": "https://github.com/i5ting/ratchet-practice/issues"
   },
   "homepage": "https://github.com/i5ting/ratchet-practice",
-  "dependencies": {
-  },
+	"pre-commit": [
+	],
+  "dependencies": {},
   "devDependencies": {
-		"http-server": "^0.7.4",
     "gulp": "^3.8.10",
     "gulp-gh-pages": "^0.4.0",
     "gulp-open": "^0.3.1",
     "gulp-rename": "^1.2.0",
+    "http-server": "^0.7.4",
+    "pre-commit": "0.0.9",
     "shelljs": "^0.3.0"
   }
 }
