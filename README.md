@@ -78,9 +78,6 @@ window.addEventListener('push', function(e){
 	}
 });
 
-$(".icon-left-nav").on('click',function(e){
-	console.log(e);
-});
 ```
 
 更多见源码里的push.js，当它完成push的时候，会发送一个自定义事件push的。
