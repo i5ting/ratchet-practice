@@ -22,7 +22,7 @@ gulp.task('generate',function () {
 	if (exec('sh ./generate.sh').code !== 0) {
 	  echo('Error: generate.sh exec failed');
 	  exit(1);
-	}	
+	}
 });
 
 gulp.task('default',['generate', 'rename', 'deploy'] ,function () {

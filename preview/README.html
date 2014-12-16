@@ -1,0 +1,349 @@
+
+	    <html>
+	      <head>
+				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <title>README</title>
+					
+					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+			
+				  <style>
+					pre {
+					    counter-reset: line-numbering;
+					    border: solid 1px #d9d9d9;
+					    border-radius: 0;
+					    background: #fff;
+					    padding: 0;
+					    line-height: 23px;
+					    margin-bottom: 30px;
+					    white-space: pre;
+					    overflow-x: auto;
+					    word-break: inherit;
+					    word-wrap: inherit;
+					}
+
+					pre a::before {
+					  content: counter(line-numbering);
+					  counter-increment: line-numbering;
+					  padding-right: 1em; /* space after numbers */
+					  width: 25px;
+					  text-align: right;
+					  opacity: 0.7;
+					  display: inline-block;
+					  color: #aaa;
+					  background: #eee;
+					  margin-right: 16px;
+					  padding: 2px 10px;
+					  font-size: 13px;
+					  -webkit-touch-callout: none;
+					  -webkit-user-select: none;
+					  -khtml-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+
+					pre a:first-of-type::before {
+					  padding-top: 10px;
+					}
+
+					pre a:last-of-type::before {
+					  padding-bottom: 10px;
+					}
+
+					pre a:only-of-type::before {
+					  padding: 10px;
+					}
+			
+					.highlight { background-color: #ffffcc } /* RIGHT */
+					</style>
+	      </head>
+	      <body>
+				  <div>
+							<div style='width:25%;'>
+									<ul id="tree" class="ztree" style='width:100%'>
+		
+									</ul>
+							</div>
+			        <div id='readme' style='width:70%;margin-left:20%;'>
+			          	<article class='markdown-body'>
+			            	<style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f0f0f0; }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #40a070 } /* Literal.Number.Bin */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<h1>ratchet-practice</h1>
+
+<p>goratchet.com</p>
+
+<h2>它是？</h2>
+
+<p>它是twitter出的移动端h5框架。用于原型和快速开发。</p>
+
+<h2>优势</h2>
+
+<ul>
+<li>快速开发</li>
+<li>小巧</li>
+<li>和bootstrap思路相近</li>
+<li>便于定制和集成</li>
+</ul>
+
+<h2>Run &amp;&amp; Test</h2>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span>
+<span class="vg">npm</span><span class="w"> </span><span class="vg">start</span>
+</pre></div>
+<p>this will open <code>http://0.0.0.0:8881/index.html</code></p>
+
+<p><img src="doc/1.png" alt=""></p>
+
+<p>默认，ratchet是不支持pc浏览器的click事件的，所以我们需要【开启移动测试】</p>
+
+<p><img src="doc/2.png" alt=""></p>
+
+<p>然后就可以尽情测试了。</p>
+
+<h2>push</h2>
+
+<p>原理：已数据结构【栈】的方式存放nav导航页面。</p>
+
+<p>核心技术</p>
+
+<ul>
+<li>ajax （加载页面）</li>
+<li>pushstate （改变url状态）</li>
+</ul>
+
+<h2>push css</h2>
+
+<h3>入栈</h3>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="vg">a</span><span class="w"> </span><span class="vg">class</span><span class="o">=</span><span class="s2">&quot;navigate-right&quot;</span><span class="w"> </span><span class="vg">href</span><span class="o">=</span><span class="s2">&quot;chat.html&quot;</span><span class="w"> </span><span class="vg">data</span><span class="o">-</span><span class="vg">transition</span><span class="o">=</span><span class="s2">&quot;slide-in&quot;</span><span class="o">&gt;</span>
+</pre></div>
+<h3>出栈</h3>
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;icon icon-left-nav pull-left&quot;</span> <span class="na">href=</span><span class="s">&quot;index.html&quot;</span> <span class="na">data-transition=</span><span class="s">&quot;slide-out&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+</pre></div>
+<h3>动画类型</h3>
+
+<p>data-transition是push的时候的动画</p>
+<div class="highlight"><pre><span class="w">  </span><span class="vg">var</span><span class="w"> </span><span class="vg">transitionMap</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="vg">slideIn</span><span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="c1">&#39;slide-out&#39;,</span>
+<span class="w">    </span><span class="vg">slideOut</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="c1">&#39;slide-in&#39;,</span>
+<span class="w">    </span><span class="vg">fade</span><span class="w">     </span><span class="o">:</span><span class="w"> </span><span class="c1">&#39;fade&#39;</span>
+<span class="w">  </span><span class="p">};</span>
+</pre></div>
+<h2>push js</h2>
+
+<p>默认不写任何js代码就可以完成push的，但是高级定制的是一定要了解每个页面入栈和出栈的生命周期的</p>
+
+<p>这方面ratchet表现的很弱，但可以实现</p>
+
+<h3>状态切换</h3>
+<div class="highlight"><pre><span class="vg">window</span><span class="o">.</span><span class="vg">addEventListener</span><span class="p">(</span><span class="c1">&#39;push&#39;, function(e){</span>
+<span class="w">    </span><span class="err">$</span><span class="p">(</span><span class="s2">&quot;#t2&quot;</span><span class="p">)</span><span class="o">.</span><span class="vg">show</span><span class="p">();</span>
+<span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="vg">alert</span><span class="p">(</span><span class="il">111</span><span class="p">);</span>
+<span class="w">    </span><span class="vg">var</span><span class="w"> </span><span class="vg">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">e</span><span class="o">.</span><span class="vg">detail</span><span class="o">.</span><span class="vg">state</span><span class="o">.</span><span class="vg">url</span><span class="p">;</span>
+
+<span class="w">    </span><span class="vg">if</span><span class="p">(</span><span class="vg">case_one</span><span class="p">(</span><span class="vg">url</span><span class="p">,</span><span class="o">/</span><span class="vg">chat</span><span class="o">\.</span><span class="vg">html</span><span class="o">/</span><span class="vg">g</span><span class="p">)){</span>
+<span class="w">        </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="s2">&quot;聊天&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="o">//</span><span class="w"> </span><span class="vg">init_with_chat</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="vg">if</span><span class="p">(</span><span class="vg">case_one</span><span class="p">(</span><span class="vg">url</span><span class="p">,</span><span class="o">/</span><span class="vg">index</span><span class="o">\.</span><span class="vg">html</span><span class="o">/</span><span class="vg">g</span><span class="p">)){</span>
+<span class="w">        </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="s2">&quot;首页&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="o">//</span><span class="w"> </span><span class="err">$</span><span class="p">(</span><span class="c1">&#39;.content&#39;).html(index_content)        </span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="vg">function</span><span class="w"> </span><span class="vg">case_one</span><span class="p">(</span><span class="vg">url</span><span class="p">,</span><span class="w"> </span><span class="vg">pattern</span><span class="p">){</span>
+<span class="w">        </span><span class="vg">return</span><span class="w"> </span><span class="p">(</span><span class="vg">url</span><span class="o">.</span><span class="vg">match</span><span class="p">(</span><span class="vg">pattern</span><span class="p">))</span><span class="w"> </span><span class="vg">instanceof</span><span class="w"> </span><span class="vg">Array</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+<p>更多见源码里的push.js，当它完成push的时候，会发送一个自定义事件push的。</p>
+
+<h3>手动调用</h3>
+
+<p>另外可以手动调用的。见源码：</p>
+<div class="highlight"><pre><span class="vg">window</span><span class="o">.</span><span class="vg">PUSH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">PUSH</span><span class="p">;</span>
+</pre></div>
+<h2>push的弊端</h2>
+
+<p>页面动态是非常头疼的问题，此处还是建议使用服务器端生成页面，不要ajax本地拼装，效果太差了。</p>
+
+<p>推荐方案</p>
+
+<ul>
+<li><p>express + jade</p></li>
+<li><p>动态的内容，使用jade来生成，此法可根据参数以及个人信息等定制，是服务器端生成的html页面</p></li>
+<li><p>静态页面可仍然使用html编写，放到express的public目录下</p></li>
+</ul>
+
+<p>上面的2种方式可以任意组合，可以胜任各种场景。</p>
+
+<ul>
+<li>jade学习文档 https://github.com/i5ting/study-jade</li>
+</ul>
+
+<h2>源码分析</h2>
+
+<h3>push state</h3>
+<div class="highlight"><pre><span class="w">  </span><span class="vg">var</span><span class="w"> </span><span class="vg">locationReplace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">url</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="vg">window</span><span class="o">.</span><span class="vg">history</span><span class="o">.</span><span class="vg">replaceState</span><span class="p">(</span><span class="vg">null</span><span class="p">,</span><span class="w"> </span><span class="c1">&#39;&#39;, &#39;#&#39;);</span>
+<span class="w">    </span><span class="vg">window</span><span class="o">.</span><span class="vg">location</span><span class="o">.</span><span class="vg">replace</span><span class="p">(</span><span class="vg">url</span><span class="p">);</span>
+<span class="w">  </span><span class="p">};</span>
+</pre></div>
+<h3>ajax get</h3>
+<div class="highlight"><pre><span class="w">  </span><span class="vg">var</span><span class="w"> </span><span class="vg">parseXHR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">xhr</span><span class="p">,</span><span class="w"> </span><span class="vg">options</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="vg">var</span><span class="w"> </span><span class="vg">head</span><span class="p">;</span>
+<span class="w">    </span><span class="vg">var</span><span class="w"> </span><span class="vg">body</span><span class="p">;</span>
+<span class="w">    </span><span class="vg">var</span><span class="w"> </span><span class="vg">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">    </span><span class="vg">var</span><span class="w"> </span><span class="vg">responseText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">xhr</span><span class="o">.</span><span class="vg">responseText</span><span class="p">;</span>
+
+<span class="w">    </span><span class="vg">data</span><span class="o">.</span><span class="vg">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">options</span><span class="o">.</span><span class="vg">url</span><span class="p">;</span>
+
+<span class="w">    </span><span class="vg">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="vg">responseText</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="vg">return</span><span class="w"> </span><span class="vg">data</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="vg">if</span><span class="w"> </span><span class="p">(</span><span class="o">/&lt;</span><span class="vg">html</span><span class="o">/</span><span class="vg">i</span><span class="o">.</span><span class="vg">test</span><span class="p">(</span><span class="vg">responseText</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="vg">head</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="vg">document</span><span class="o">.</span><span class="vg">createElement</span><span class="p">(</span><span class="c1">&#39;div&#39;);</span>
+<span class="w">      </span><span class="vg">body</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="vg">document</span><span class="o">.</span><span class="vg">createElement</span><span class="p">(</span><span class="c1">&#39;div&#39;);</span>
+<span class="w">      </span><span class="vg">head</span><span class="o">.</span><span class="vg">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">responseText</span><span class="o">.</span><span class="vg">match</span><span class="p">(</span><span class="o">/&lt;</span><span class="vg">head</span><span class="p">[</span><span class="o">^&gt;</span><span class="p">]</span><span class="o">*&gt;</span><span class="p">([</span><span class="o">\</span><span class="vg">s</span><span class="o">\</span><span class="vg">S</span><span class="o">.</span><span class="p">]</span><span class="o">*</span><span class="p">)</span><span class="o">&lt;\/</span><span class="vg">head</span><span class="o">&gt;/</span><span class="vg">i</span><span class="p">)[</span><span class="il">0</span><span class="p">];</span>
+<span class="w">      </span><span class="vg">body</span><span class="o">.</span><span class="vg">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">responseText</span><span class="o">.</span><span class="vg">match</span><span class="p">(</span><span class="o">/&lt;</span><span class="vg">body</span><span class="p">[</span><span class="o">^&gt;</span><span class="p">]</span><span class="o">*&gt;</span><span class="p">([</span><span class="o">\</span><span class="vg">s</span><span class="o">\</span><span class="vg">S</span><span class="o">.</span><span class="p">]</span><span class="o">*</span><span class="p">)</span><span class="o">&lt;\/</span><span class="vg">body</span><span class="o">&gt;/</span><span class="vg">i</span><span class="p">)[</span><span class="il">0</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="vg">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="vg">head</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="vg">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">document</span><span class="o">.</span><span class="vg">createElement</span><span class="p">(</span><span class="c1">&#39;div&#39;);</span>
+<span class="w">      </span><span class="vg">head</span><span class="o">.</span><span class="vg">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">responseText</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="vg">data</span><span class="o">.</span><span class="vg">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">head</span><span class="o">.</span><span class="vg">querySelector</span><span class="p">(</span><span class="c1">&#39;title&#39;);</span>
+<span class="w">    </span><span class="vg">var</span><span class="w"> </span><span class="vg">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="c1">&#39;innerText&#39; in data.title ? &#39;innerText&#39; : &#39;textContent&#39;;</span>
+<span class="w">    </span><span class="vg">data</span><span class="o">.</span><span class="vg">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">data</span><span class="o">.</span><span class="vg">title</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="vg">data</span><span class="o">.</span><span class="vg">title</span><span class="p">[</span><span class="vg">text</span><span class="p">]</span><span class="o">.</span><span class="vg">trim</span><span class="p">();</span>
+
+<span class="w">    </span><span class="vg">if</span><span class="w"> </span><span class="p">(</span><span class="vg">options</span><span class="o">.</span><span class="vg">transition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="vg">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">extendWithDom</span><span class="p">(</span><span class="vg">data</span><span class="p">,</span><span class="w"> </span><span class="c1">&#39;.content&#39;, body);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="vg">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="vg">data</span><span class="o">.</span><span class="vg">contents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">body</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="vg">return</span><span class="w"> </span><span class="vg">data</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+</pre></div>
+<p>此处并没有把js加载进来，所以你不要期望在将push的页面里写函数。</p>
+
+<p>所有的js代码应该最终都写在一个文件里。</p>
+
+<h2>my best practice</h2>
+
+<h3>推荐js库</h3>
+
+<ul>
+<li>ratchet(push,ui,css)</li>
+<li>zepto.js(类jq的移动端库，支持tap、手势等，兼容jquey大部分api)</li>
+<li>iscroll5.js（滚动效果最好的库）</li>
+<li>fastclick.js（增强点击转成touch的库，可定制）</li>
+<li>miniobj.js（js面向对象库）</li>
+<li>collection.js（如果移动端浏览器不支持websql，它会自动转成localstorage）</li>
+</ul>
+
+<h3>使用gulp task</h3>
+
+<ul>
+<li>uglify</li>
+<li>watch</li>
+<li>livereload</li>
+<li>test</li>
+<li>coverage</li>
+</ul>
+
+<h3>服务器优化</h3>
+
+<ul>
+<li>appcache</li>
+<li>mime</li>
+<li>zip</li>
+<li>禁用etag</li>
+<li>...</li>
+</ul>
+
+			          	</article>
+			        </div>
+					</div>
+	      </body>
+	    </html>
+			<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js"></script>
+      
+			<SCRIPT type="text/javascript" >
+			<!--
+			$(document).ready(function(){
+          var css_conf = eval(markdown_panel_style);
+          $('#readme').css(css_conf)
+          
+          var conf = eval(jquery_ztree_toc_opts);
+  				$('#tree').ztree_toc(conf);
+
+				
+			});
+			//-->
+			</SCRIPT>
+	  
