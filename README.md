@@ -125,3 +125,57 @@ window.PUSH = PUSH;
 
 - jade学习文档 https://github.com/i5ting/study-jade
 
+## 源码分析
+
+### push state
+
+```
+  var locationReplace = function (url) {
+    window.history.replaceState(null, '', '#');
+    window.location.replace(url);
+  };
+```
+
+### ajax get
+
+```
+  var parseXHR = function (xhr, options) {
+    var head;
+    var body;
+    var data = {};
+    var responseText = xhr.responseText;
+
+    data.url = options.url;
+
+    if (!responseText) {
+      return data;
+    }
+
+    if (/<html/i.test(responseText)) {
+      head           = document.createElement('div');
+      body           = document.createElement('div');
+      head.innerHTML = responseText.match(/<head[^>]*>([\s\S.]*)<\/head>/i)[0];
+      body.innerHTML = responseText.match(/<body[^>]*>([\s\S.]*)<\/body>/i)[0];
+    } else {
+      head           = body = document.createElement('div');
+      head.innerHTML = responseText;
+    }
+
+    data.title = head.querySelector('title');
+    var text = 'innerText' in data.title ? 'innerText' : 'textContent';
+    data.title = data.title && data.title[text].trim();
+
+    if (options.transition) {
+      data = extendWithDom(data, '.content', body);
+    } else {
+      data.contents = body;
+    }
+
+    return data;
+  };
+```
+
+此处并没有把js加载进来，所以你不要期望在将push的页面里写函数。
+
+所有的js代码应该最终都写在一个文件里。
+
