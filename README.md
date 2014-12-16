@@ -109,11 +109,16 @@ window.addEventListener('push', function(e){
 window.PUSH = PUSH;
 ```
 
-
-
 ## push的弊端
 
 页面动态是非常头疼的问题，此处还是建议使用服务器端生成页面，不要ajax本地拼装，效果太差了。
 
+推荐方案
 
+- express + jade
+
+- 动态的内容，使用jade来生成，此法可根据参数以及个人信息等定制，是服务器端生成的html页面
+- 静态页面可仍然使用html编写，放到express的public目录下
+
+上面的2种方式可以任意组合，可以胜任各种场景。
 
