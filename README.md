@@ -190,6 +190,23 @@ window.PUSH = PUSH;
 - miniobj.js（js面向对象库）
 - collection.js（如果移动端浏览器不支持websql，它会自动转成localstorage）
 
+### ripple 模拟器
+
+
+There is a command line interface that can be paired with the client (UI).
+
+It can be used for various things, such as statically hosting an application, and running a local (cross origin) XHR proxy.
+
+To install:
+
+    npm install -g ripple-emulator
+
+This will install a global script called `ripple`. To see usage, run:
+
+    ripple help
+
+这只是一个选择而已，待测
+
 ### 使用gulp task
 
 - uglify
@@ -205,3 +222,4 @@ window.PUSH = PUSH;
 - zip
 - 禁用etag
 - ...
+
