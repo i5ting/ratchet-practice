@@ -189,6 +189,7 @@ window.PUSH = PUSH;
 - fastclick.js（增强点击转成touch的库，可定制）
 - miniobj.js（js面向对象库）
 - collection.js（如果移动端浏览器不支持websql，它会自动转成localstorage）
+- http://scottjehl.github.io/picturefill/
 
 ### ripple 模拟器
 
