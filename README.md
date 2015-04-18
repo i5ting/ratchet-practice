@@ -179,6 +179,31 @@ window.PUSH = PUSH;
 
 所有的js代码应该最终都写在一个文件里。
 
+### push事件
+
+当多个页面push和pop的时候，可能需要更新数据，此时需要监听push事件
+
+```
+	window.addEventListener('push', function(e){
+		var url = e.detail.state.url;
+
+		if(case_one(url,/chat\.html/g)){
+			// alert("聊天");
+			init_with_chat();
+		}
+		
+		if(case_one(url,/index\.html/g)){
+			// alert("首页");
+			// $('.content').html(index_content)
+			// main();
+		}
+		
+		function case_one(url, pattern){
+			return (url.match(pattern)) instanceof Array;
+		}
+	});
+```
+
 ## my best practice 
 
 ### 推荐js库
