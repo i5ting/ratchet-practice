@@ -290,6 +290,28 @@
 
 <p>所有的js代码应该最终都写在一个文件里。</p>
 
+<h3>push事件</h3>
+
+<p>当多个页面push和pop的时候，可能需要更新数据，此时需要监听push事件</p>
+<div class="highlight"><pre><span class="w">    </span><span class="vg">window</span><span class="o">.</span><span class="vg">addEventListener</span><span class="p">(</span><span class="c1">&#39;push&#39;, function(e){</span>
+<span class="w">        </span><span class="vg">var</span><span class="w"> </span><span class="vg">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">e</span><span class="o">.</span><span class="vg">detail</span><span class="o">.</span><span class="vg">state</span><span class="o">.</span><span class="vg">url</span><span class="p">;</span>
+
+<span class="w">        </span><span class="vg">if</span><span class="p">(</span><span class="vg">case_one</span><span class="p">(</span><span class="vg">url</span><span class="p">,</span><span class="o">/</span><span class="vg">chat</span><span class="o">\.</span><span class="vg">html</span><span class="o">/</span><span class="vg">g</span><span class="p">)){</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">alert</span><span class="p">(</span><span class="s2">&quot;聊天&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="vg">init_with_chat</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="vg">if</span><span class="p">(</span><span class="vg">case_one</span><span class="p">(</span><span class="vg">url</span><span class="p">,</span><span class="o">/</span><span class="vg">index</span><span class="o">\.</span><span class="vg">html</span><span class="o">/</span><span class="vg">g</span><span class="p">)){</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">alert</span><span class="p">(</span><span class="s2">&quot;首页&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="err">$</span><span class="p">(</span><span class="c1">&#39;.content&#39;).html(index_content)</span>
+<span class="w">            </span><span class="o">//</span><span class="w"> </span><span class="vg">main</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="vg">function</span><span class="w"> </span><span class="vg">case_one</span><span class="p">(</span><span class="vg">url</span><span class="p">,</span><span class="w"> </span><span class="vg">pattern</span><span class="p">){</span>
+<span class="w">            </span><span class="vg">return</span><span class="w"> </span><span class="p">(</span><span class="vg">url</span><span class="o">.</span><span class="vg">match</span><span class="p">(</span><span class="vg">pattern</span><span class="p">))</span><span class="w"> </span><span class="vg">instanceof</span><span class="w"> </span><span class="vg">Array</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">});</span>
+</pre></div>
 <h2>my best practice</h2>
 
 <h3>推荐js库</h3>
@@ -301,7 +323,22 @@
 <li>fastclick.js（增强点击转成touch的库，可定制）</li>
 <li>miniobj.js（js面向对象库）</li>
 <li>collection.js（如果移动端浏览器不支持websql，它会自动转成localstorage）</li>
+<li>http://scottjehl.github.io/picturefill/</li>
 </ul>
+
+<h3>ripple 模拟器</h3>
+
+<p>There is a command line interface that can be paired with the client (UI).</p>
+
+<p>It can be used for various things, such as statically hosting an application, and running a local (cross origin) XHR proxy.</p>
+
+<p>To install:</p>
+<div class="highlight"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">-</span><span class="vg">g</span><span class="w"> </span><span class="vg">ripple</span><span class="o">-</span><span class="vg">emulator</span>
+</pre></div>
+<p>This will install a global script called <code>ripple</code>. To see usage, run:</p>
+<div class="highlight"><pre><span class="vg">ripple</span><span class="w"> </span><span class="vg">help</span>
+</pre></div>
+<p>这只是一个选择而已，待测</p>
 
 <h3>使用gulp task</h3>
 
